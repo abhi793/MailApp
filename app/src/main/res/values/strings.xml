@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MailApp</string>
+    <string name="list_url">http://localhost:8088/api/message</string>
+    <string name="get_message">http://10.0.0.8:8088/api/message</string>
+</resources>

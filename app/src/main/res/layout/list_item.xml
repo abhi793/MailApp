@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first"
+        android:weightSum="10">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:layout_height="wrap_content"
+        android:id="@+id/senderName"
+        android:textSize="18sp"
+        android:text="Sender"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starred"
+        android:layout_toEndOf="@+id/mailBody"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/star"
+        android:layout_toRightOf="@+id/mailBody" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Subject,hey how u doing"
+        android:id="@+id/subject"
+        android:ellipsize="end"
+        android:textColor="#000000"
+        android:maxLines="1"
+        android:layout_below="@+id/first"
+        android:layout_marginTop="1dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Nothing just chillingjkabfbsjhfdjfabjbfajsbjfhbsdfjbsdvjajhadbjhbsh"
+        android:id="@+id/mailBody"
+        android:layout_below="@+id/subject"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginTop="1dp" />
+
+</RelativeLayout>
