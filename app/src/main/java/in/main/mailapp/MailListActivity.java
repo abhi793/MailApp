@@ -39,7 +39,7 @@ public class MailListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mail_list);
 
         getListUrl = getResources().getString(R.string.list_url);
-        getEmailList("http://10.0.0.8:8088/api/message");
+        getEmailList("http://127.0.0.1:8088/api/message");
 
         mailList = new ArrayList<MailModel>();
         listView = (ListView) findViewById(R.id.list);

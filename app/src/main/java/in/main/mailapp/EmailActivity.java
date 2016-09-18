@@ -34,7 +34,7 @@ public class EmailActivity extends AppCompatActivity {
         if(b!=null)
         {
             String j =(String) b.get("Id");
-            getMessage("http://10.0.0.8:8088/api/message"+"/"+j);
+            getMessage("http://127.0.0.1:8088/api/message/"+j);
         }
 
         subject = (TextView)findViewById(R.id.mailSubject);
